@@ -317,6 +317,54 @@ main {
   gap: 0.8rem;
 }
 
+.timeline {
+  margin-top: 1rem;
+  position: relative;
+  padding-left: 2.4rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.6rem;
+  top: 0.5rem;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.timeline-year {
+  font-weight: 900;
+  font-size: 1.35rem;
+  color: var(--primary-deep);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+.timeline-content {
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.timeline-content p {
+  margin: 0.4rem 0;
+}
+
+.timeline-content p:first-child {
+  margin-top: 0;
+}
+
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+
 .site-footer {
   text-align: center;
   color: #3a6388;
